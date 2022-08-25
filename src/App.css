@@ -1,0 +1,115 @@
+.loader {
+  border: 16px solid #fffff;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  margin: auto 20%;
+  padding: 10px;
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.container {
+  padding: 40px 20px 20px 20px;
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.card_item {
+  padding: 15px 30px;
+  width: 25%;
+  text-align: center;
+}
+
+.container .card_item:hover {
+  transform: scale(1.02);
+  transition: transform .3s;
+  cursor: pointer;
+}
+
+.container .card_inner {
+  background: rgba(253, 253, 253, 0.808);
+  border-radius: 10px;
+  padding: 35px 20px;
+  min-width: 225px;
+  min-height: 315px;
+  max-height: 200px;
+  width: 70%;
+  box-shadow: 5px 5px 10px 2px rgba(95, 95, 95, 0.24);
+}
+
+.container .card_item img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  align-items: center;
+  transition: transform .2s;
+}
+
+.container .card_item .username {
+  color: #203150;
+  font-weight: 600;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container .card_item .email {
+  font-size: 12px;
+  font-weight: 100;
+  margin: 5px 0 10px;
+  word-wrap: break-word;
+  color: #888B9E;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
